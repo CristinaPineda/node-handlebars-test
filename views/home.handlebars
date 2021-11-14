@@ -1,0 +1,10 @@
+<h1>Tabela de itens</h1>
+<div class="div">
+  {{#each itens}}
+    <div class="itens">
+      <h3>{{this.title}}</h3>
+      <h4>R${{this.value}}</h4>
+      <p><a href="/item/{{this.id}}">Ir</a></p>
+    </div>
+  {{/each}}
+</div>
